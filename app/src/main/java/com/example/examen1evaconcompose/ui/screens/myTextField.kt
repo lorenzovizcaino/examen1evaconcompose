@@ -26,14 +26,14 @@ fun myTextFieldPass(
     number: String,
     function: (String) -> Unit,
     operando: String,
-    viewModel: LoginViewModel
+    visible: Boolean
 ) {
     /*Esta funcion oculta con asteriscos lo escrito*/
     TextField(
         value = number,
         onValueChange = function,
         label = { Text(operando) },
-        visualTransformation = if (viewModel.PasswordVisible) VisualTransformation.None else PasswordVisualTransformation(),
+        visualTransformation = if (visible) VisualTransformation.None else PasswordVisualTransformation(),
         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password)
     )
 }

@@ -36,7 +36,7 @@ fun Menu(navController: NavController, viewModel: LoginViewModel) {
             number = viewModel.password,
             function = { viewModel.ObtenerPassword(it) },
             operando = "Contraseña",
-            viewModel
+            viewModel.PasswordVisible
         )
         EspacioH(30)
         Text(

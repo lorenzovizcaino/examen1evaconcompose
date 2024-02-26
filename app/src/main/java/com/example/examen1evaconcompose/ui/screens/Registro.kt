@@ -19,7 +19,7 @@ fun Registro(viewModel: LoginViewModel) {
     var context= LocalContext.current
     Column(modifier = Modifier.padding(top = 180.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.SpaceEvenly) {
         myTextField(number = viewModel.usuario, function ={viewModel.ObtenerUsuario(it)} , operando ="Usuario" )
-        myTextFieldPass(number = viewModel.password, function ={viewModel.ObtenerPassword(it)} , operando ="Contraseña",viewModel )
+        myTextFieldPass(number = viewModel.password, function ={viewModel.ObtenerPassword(it)} , operando ="Contraseña",viewModel.PasswordVisible )
         Text(modifier = Modifier
             .align(Alignment.End)
             .padding(end = 50.dp).clickable {
@@ -28,7 +28,7 @@ fun Registro(viewModel: LoginViewModel) {
             text = if(viewModel.PasswordVisible) "Ocultar contraseña" else "Ver contraseña",
 
         )
-        myTextFieldPass(number = viewModel.password2, function ={viewModel.ObtenerPassword2(it)} , operando ="Repite contraseña", viewModel )
+        myTextFieldPass(number = viewModel.password2, function ={viewModel.ObtenerPassword2(it)} , operando ="Repite contraseña", viewModel.PasswordVisible )
         Button(modifier = Modifier
             .align(Alignment.End)
             .padding(end = 50.dp),onClick = {
