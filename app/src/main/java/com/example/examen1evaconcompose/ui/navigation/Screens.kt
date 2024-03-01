@@ -6,4 +6,5 @@ sealed class Screens(val route:String){
 
     object Contadores: Screens("Contadores")//info a aparecer en pantalla
     object Registro: Screens("Registro")//info a aparecer en pantalla
+    object Listas: Screens("Listas")//info a aparecer en pantalla
 }

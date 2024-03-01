@@ -6,6 +6,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.examen1evaconcompose.ui.screens.Contadores
+import com.example.examen1evaconcompose.ui.screens.Listas
 import com.example.examen1evaconcompose.ui.screens.LoginViewModel
 import com.example.examen1evaconcompose.ui.screens.Menu
 import com.example.examen1evaconcompose.ui.screens.Registro
@@ -19,10 +20,13 @@ fun Navigation() {
         composable(route = Screens.Menu.route) { Menu(navController, viewModel) }//Nombre del fichero .kt al que navegar
 
         composable(route = Screens.Contadores.route) {
-            Contadores(viewModel) //Nombre de la función composable a la que navegar
+            Contadores(navController,viewModel) //Nombre de la función composable a la que navegar
         }
         composable(route = Screens.Registro.route) {
             Registro(viewModel) //Nombre de la función composable a la que navegar
+        }
+        composable(route = Screens.Listas.route) {
+            Listas(viewModel) //Nombre de la función composable a la que navegar
         }
 
 
