@@ -1,4 +1,4 @@
-package com.example.examen1evaconcompose.ui.screens
+package com.example.examen1evaconcompose.ui.miscompose
 
 import android.content.Context
 import android.widget.Toast
