@@ -25,9 +25,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.example.examen1evaconcompose.ui.miscompose.EspacioH
-import com.example.examen1evaconcompose.ui.miscompose.myTextField
-import com.example.examen1evaconcompose.ui.miscompose.myTextFieldPass
+
 import com.example.examen1evaconcompose.ui.navigation.Screens
 
 
